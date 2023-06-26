@@ -1,0 +1,28 @@
+body,
+html {
+  height: 100%;
+  margin: 0;
+}
+
+.image {
+  display: flex;
+  background-image: url('../images/background-index.jpg');
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.7;
+}
+
+#linkWebsite {
+  display: flex;
+  justify-content: center;
+  flex: 1;
+  font-size: 70px;
+  flex-direction: column;
+  align-items: center;
+  color: #e60808;
+  font-weight: bold;
+  text-decoration: overline;
+  cursor: pointer;
+}

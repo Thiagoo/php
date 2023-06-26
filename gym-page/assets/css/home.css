@@ -1,0 +1,162 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+  background-color: #ffffff;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+}
+
+.logout {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.logout a {
+  color: #000000;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.image-header {
+  background: url('../images/banner.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  height: 600px;
+  width: 100%;
+  flex-flow: column wrap;
+}
+
+.content-title h1 {
+  text-align: center;
+}
+
+nav {
+  width: 100%;
+  background: #ffffff;
+  padding: 20px;
+  text-align: center;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.navigation a {
+  color: white;
+  font-weight: 300;
+  letter-spacing: 2px;
+  text-decoration: none;
+  background: rgb(238, 13, 13);
+  padding: 20px 5px;
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+}
+
+.navigation a:hover {
+  background: rgba(238, 13, 13, 0.75);
+}
+
+.navigation ul {
+  border: 1px solid rgb(212, 20, 20);
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.navigation li {
+  flex: 3;
+  border: 1px solid #ffffff;
+}
+
+.imageContainer {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  margin: 10px;
+}
+
+.image-content1,
+.image-content2,
+.image-content3,
+.image-content4 {
+  background-size: cover !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+  height: 400px;
+}
+
+.image-content1 {
+  background: url('../images/gym1.jpg');
+}
+.image-content2 {
+  background: url('../images/gym2.jpg');
+}
+.image-content3 {
+  background: url('../images/gym3.jpg');
+}
+.image-content4 {
+  background: url('../images/gym4.jpg');
+}
+
+.personalContent p {
+  font-size: 26px;
+  text-align: center;
+}
+
+section::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+footer {
+  background-color: #ccc;
+}
+
+/*mobile sctructure*/
+@media (max-width: 600px) {
+  nav,
+  article {
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media all and (max-width: 1000px) {
+  .navigation ul {
+    flex-wrap: wrap;
+  }
+
+  .navigation li {
+    flex: 1 1 50%;
+  }
+}
+
+@media all and (max-width: 480px) {
+  .navigation li {
+    flex-basis: 100%;
+  }
+}
